@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+@font-face {
+    font-family: 'Theinhardt';
+    src: url('../font/Theinhardt-Light.woff') format('woff');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Theinhardt';
+    src: url('../font/Theinhardt-Regular.woff') format('woff');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Theinhardt';
+    src: url('../font/Theinhardt-Medium.woff') format('woff');
+    font-weight: 500;
+}
+
+

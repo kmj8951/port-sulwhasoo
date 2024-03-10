@@ -1,0 +1,145 @@
+/* 메인 공통 */
+
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0)
+}
+
+.inner{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: content-box;
+}
+.inner2{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 51px;
+    box-sizing: content-box;
+}
+
+.text-box .inner{
+    max-width: 1200px;
+}
+
+
+.text-box strong{
+    font-weight: 800;
+}
+
+.text-box p{
+    font-weight: 400;
+}
+
+.headline {
+    margin: 120px 0 20px;
+    color: #000;
+    font-size: 28px;
+    line-height: 50px;
+    font-weight: 500;
+    letter-spacing: -.025em;
+}
+
+.text-box{
+    letter-spacing: -.025em;
+}
+.text-box .kor{   
+    margin-top: 23px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #000;
+}
+.text-box .eng{
+    padding: 2px 0 14px;
+    font-weight: 200;
+    font-size: 16px;
+    color: #888;
+}
+
+.text-box .price{
+    color: #000;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.headline{
+
+}
+
+
+.fix-top .btn-top{
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    position: fixed;
+    right: 215px;
+    z-index: 9;
+    background: #767676;
+    opacity: 0.8;
+}
+.fix-top .btn-top:hover img{
+    background: #000;
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+
+
+/* 721~1022 (1023에서 바뀜)*/ 
+@media (max-width:1023px){
+    .header .group-flex .inner2{
+        padding: 0 20px;
+    }
+    .inner{
+        padding: 0 20px;
+    }
+ 
+    
+
+    .headline {
+        margin: 105px 0 16px;
+        font-size: 20px;
+    }
+
+    .text-box .kor{
+        font-size: 18px;   
+    }
+    .text-box .eng{
+        font-weight: 400;
+        font-size: 12px;
+        color: rgb(136, 136, 136);
+        padding: 0 0 11px;
+    }
+    .text-box .price{
+        font-weight: 500;
+        font-size: 12px;
+    }
+
+    .fix-top .btn-top{
+        width: 40px;
+        height: 40px;
+        bottom: 80px;
+        /* bottom: 170px; */
+        position: fixed;
+        right: 0;
+        z-index: 9;
+        background: #767676;
+        opacity: 0.8;
+    }
+}
+
+
+/* 0~720 (721에서 바뀜)*/ 
+@media (max-width:721px){
+    .headline {
+        text-align: center;
+        font-size: 22px;
+        margin-top: 24px;
+    }
+
+
+}
+

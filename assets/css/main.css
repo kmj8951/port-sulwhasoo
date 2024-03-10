@@ -1,0 +1,942 @@
+
+/* 메인비주얼 영역 */
+
+.sc-visual_m {display: none;}
+
+.sc-visual{ position: relative; }
+.sc-visual .swiper{}
+.sc-visual .img-box{
+    position: relative;
+    padding-bottom: calc((670/1920)*100%); 
+}
+.sc-visual img{
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sc-visual .swiper-slide{}
+.sc-visual .swiper-slide a{display: block;position: relative;}
+
+.sc-visual .swiper-slide .text-box{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.sc-visual .text-box p{
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: -.025em;
+    color: #fff;
+    text-shadow: 1px 1px 6px #666;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.sc-visual .text-box strong{ 
+    display: block;
+    font-weight: 500;
+    letter-spacing: -.025em;
+    color: #fff;
+    text-shadow: 1px 1px 6px rgba(102,102,102,.9019607843);
+    padding: 13px 0 10.15625%;
+    font-size: 36px;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.sc-visual .swiper-slide-active p{
+    opacity: 1;
+    transform: translateY(0px);
+    transition: transform 1s .3s, opacity 1s .3s;
+}
+.sc-visual .swiper-slide-active strong{
+    opacity: 1;
+    transform: translateY(0px);
+    transition: transform 1s .4s, opacity 1s .4s;
+}
+.sc-visual .btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 11;
+    width: 68px;
+    height: 68px;
+    background-size: cover;
+    background-color: rgba(255,255,255,.4);
+}
+.sc-visual .btn.prev{
+    left: 0px;
+    right: auto;
+}
+
+.sc-visual .btn.next{
+    right: 0px;
+    left: auto;
+}
+
+.sc-visual .control-box{
+    position: absolute;
+    bottom: 0;left: 0;
+    width: 100%;
+    z-index: 2;
+    margin-bottom: 4.6875%;
+}
+.sc-visual .control-box .inner{
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.sc-visual .control-box .swiper-pagination{
+    position: relative;
+
+    width: 420px;
+}
+
+.sc-visual .btn-autoplay{
+    margin-right: 12px;
+    width: 9px;
+    height: 11px;
+    background: url(../img/btn-stop.png) no-repeat center center/cover;
+}
+.sc-visual .btn-autoplay.on{
+    background: url(../img/btn-play.png) no-repeat center center/cover;
+}
+
+.sc-visual .swiper-pagination-progressbar{
+    background-color: rgba(255,255,255,0);
+    border: 1px solid rgba(255,255,255,0.5);
+}
+.sc-visual .swiper-pagination-progressbar-fill{
+    background-color: #fff;
+}
+
+
+/* sc-recommend 영역 */
+.recommend-slide_m{display: none;}
+
+.sc-recommend{
+    position: relative; /* 상대적인 위치로 설정 */
+    margin-top: 96px; 
+}
+.sc-recommend .swiper-wrapper{
+
+}
+
+.sc-recommend .swiper-slide img{
+    display: block;
+    position: relative;
+}
+
+.sc-recommend .text-box{
+    text-align: center;
+    margin-top: 23px;
+    padding-bottom: 55px;
+}
+
+.sc-recommend .btn{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateY(-50%);
+    z-index: 11;
+    width: 68px;
+    height: 68px;
+    background-size: cover;
+    background-color: rgba(255,255,255,.4);
+}
+.sc-recommend .btn.prev{
+    left: 0px;
+    right: auto;
+}
+.sc-recommend .btn.next{
+    right: 0px;
+    left: auto;
+}
+
+
+.sc-recommend .control-box{
+    position: absolute;
+    margin: 0 auto;
+    bottom: 0;left: 0;
+    width: 100%;
+    z-index: 2;
+}
+.sc-recommend .control-box .inner{
+    max-width: 1200px;
+}
+
+.sc-recommend .control-box .flex-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.sc-recommend .control-box .swiper-pagination{
+    position: relative;
+    width: 420px;
+}
+
+.sc-recommend .btn-autoplay{
+    margin-right: 12px;
+    width: 9px;
+    height: 11px;
+    background: url(../img/btn-stop_b.svg) no-repeat center center/cover;
+}
+.sc-recommend .btn-autoplay.on{
+    background: url(../img/btn-play_b.svg) no-repeat center center/cover;
+}
+
+.sc-recommend .swiper-pagination-progressbar{
+    background: #ddd;
+}
+.sc-recommend .swiper-pagination-progressbar-fill{
+    background-color: #000;
+}
+
+
+/* sc-best 영역 */
+.sc-best .img-box_m{display: none;}
+.sc-best{
+    margin-top: 120px;
+}
+.sc-best a{
+    position: relative;
+}
+.sc-best .img-box {
+    margin: 0 auto;
+    background: #f0f;
+    height: 540px;
+}
+.sc-best .img-box img{
+    width: 100%;
+    height: 100%;
+    top: 0;left: 0;
+    object-fit: cover;
+}
+.sc-best .text-box{
+    position: absolute;
+    bottom: 16.6666666667%;
+    left: 11.8055555556%;
+}
+.sc-best .text-box .title{
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: -.025em;
+}
+.sc-best .text-box .desc{
+    margin-top: 13px;
+    margin-bottom: 26px;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: -.025em;
+    color: #666;
+    line-height: 18x;
+}
+
+.sc-best .btn-more {
+    margin: 0 auto;
+    display: inline-block;
+    padding: 8px 23px;
+    border: 1px solid #000;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+
+/* sc-season 영역 */
+.sc-season .season-list_m{display: none;}
+.sc-season{
+    margin: 0 auto;
+}
+
+.sc-season .season-list{
+    display: block;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.sc-season a{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.sc-season .season-item a{}
+
+.sc-season .season-item{
+    position: relative;
+    background: #ededed;
+    flex: 2.5;
+}
+
+.sc-season .season-item .img-box{ 
+    margin: 0 auto;
+    background: #ededed;
+}
+.sc-season .season-item .img-box img{
+    height: 100%; 
+    top: 0;left: 0;
+    object-fit: cover;
+}
+
+.sc-season .season-item-big{
+    position: relative;
+    flex: 5;
+}
+
+.sc-season .text-box{
+    text-align: center;
+    padding-bottom: 55px;
+}
+.sc-season .season-item-big .img-box{
+    margin: 0 auto;
+    height: 100%;
+}
+.sc-season .season-item-big .img-box img{
+    width: 100%;
+    height: 100%;
+    top: 0;left: 0;
+    object-fit: cover;
+}
+
+
+
+.sc-season .season-item-big .text-box{
+    position: absolute;
+    bottom: 0;left: 64px;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -.025em;
+    color: #666;
+}
+.sc-season .season-item-big .text-box .title{
+    font-weight: 500;
+    font-size: 24px;
+    color: #000;
+}
+.sc-season .season-item-big .text-box .desc{
+    font-weight: 200;
+    color: #767676;
+    line-height: 30px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+
+/* sc-store 영역 */
+.sc-store .store-list_m{display: none;}
+.sc-store .store-list{
+    margin-top: 200px;
+    display: flex;
+    gap: 26px;
+}
+.sc-store .store-item{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.sc-store .store-item .img-box{
+    background: #f00f;
+}
+.sc-store .store-item .text-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.sc-store .store-item .text-box p {
+    margin-top: 22px;
+    color: #000;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+}
+.sc-store .btn-more {
+    margin: 25px auto;
+    display: inline-block;
+    padding: 9px 33px;
+    border: 1px solid #000;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+/* sc-with 영역 */
+.sc-with{ position: relative; }
+
+.sc-with .swiper-wrapper{}
+
+.sc-with .swiper-slide {
+    width: 300px;
+}
+.sc-with .swiper-slide a{
+    cursor: url(../img/cursor.webp) 32 32,auto;
+}
+
+.sc-with .swiper-slide .img-box{
+    position: relative;
+    padding-bottom: 100%;
+    transition: .3s;
+}
+.sc-with .swiper-slide .img-box img{
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sc-with .text-box{
+    position: absolute;
+    bottom: 0;left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+    transform: translateY(100%);
+    transition: .3s;
+}
+.sc-with .text-box svg{height: 20px;width: 100%;}
+.sc-with .text-box path{fill: #fff;}
+.sc-with .text-box .wrap{
+    background: #fff;
+}
+.sc-with .text-box .title{
+    font-size: 13px;
+    padding: 5px 10px;
+}
+.sc-with .text-box .desc{
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 5px 10px;
+}
+
+.sc-with .swiper-slide:hover .img-box{
+    transform: translateY(-20px);
+}
+
+.sc-with .swiper-slide:hover .text-box{
+    transform: translateY(0);
+}
+
+.sc-with .btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 11;
+    width: 68px;
+    height: 300px;
+    background-size: cover;
+    background-color: rgba(255,255,255,.8);
+}
+.sc-with .btn.prev{
+    left: 0px;
+    right: auto;
+}
+.sc-with .btn.next{
+    right: 0px;
+    left: auto;
+}
+.sc-with .btn.prev img{
+    margin-left: 24px;
+}
+.sc-with .btn.next img{
+    margin-left: 24px;
+}
+.sc-with .btn.swiper-button-disabled{
+    opacity: 0;
+}
+
+
+
+
+/* 1023~최대 */
+
+/* 721~1022 (1023에서 바뀜)*/ 
+@media (max-width:1023px){
+
+/* 메인비주얼 영역 */
+.sc-visual .btn{
+    width: 50px;
+    height: 50px;
+    }
+.sc-visual .btn.next {
+    margin-left: 461px;
+}
+
+/* sc-recommend 영역 */
+.sc-recommend .btn{
+    width: 50px;
+    height: 50px;
+    top: 32%;
+}
+.sc-recommend .btn.prev{
+    left: 0;
+}
+
+.sc-recommend .btn.next{
+    margin-left: 441px;
+}
+
+.sc-visual .inner{padding-left: 74px; }
+.sc-visual .text-box p{
+    font-size: 14px;
+}
+.sc-visual .text-box strong{
+    font-size: 28px;
+    padding: 9px 0 97px;
+}   
+.sc-visual .control-box .swiper-pagination{width: 301px;}
+.sc-recommend .text-box {
+    box-sizing: content-box;
+}
+
+.sc-recommend .control-box .swiper-pagination{
+    width: 300px;
+    height: 3px;
+}
+.sc-recommend .btn-autoplay{width: 6px;height: 7px;}
+
+/* sc-best 영역 */
+.sc-best{ margin-top: 108px;
+}
+.sc-best .img-box{
+    height: 368px;
+}
+.sc-best .text-box{   padding-bottom: 5.9574468085%;}
+.sc-best .text-box .title{
+    font-size: 24px;
+}
+.sc-best .text-box .desc{
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.sc-best .btn{
+    margin-top: 20px;
+    width: 95px;
+    height: 35px;
+    padding: 12px 23px 6px;
+}
+.sc-best .btn-more{
+    font-size: 10px;
+    letter-spacing: -.07em;
+    word-spacing: 0.05em;
+}
+
+/* sc-season 영역 */
+.sc-season .season-list_m{display: none;}
+.sc-season .season-list{
+    display: flex;
+    gap: 20px;
+}
+
+.sc-season .season-item a{}
+
+.sc-season .season-item{
+    position: relative;
+    background: #ededed;
+    flex: 2.5;
+}
+
+.sc-season .text-box{
+    text-align: center;
+    line-height: 1.8;
+    padding-left: 5.6497175141%;
+    padding-bottom: 5.9574468085%;
+}
+
+.sc-season .season-item-big{
+    position: relative;
+}
+
+.sc-season .season-item-big .text-box{
+    position: absolute;
+    bottom: 0;left: 0px;
+}
+
+.sc-season .season-item-big .img-box{
+    height: 362px;
+}
+
+.sc-season .season-item-big{}
+
+.sc-season .season-item-big .text-box .title{
+    font-size: 18px;
+}
+.sc-season .season-item-big .text-box .desc{
+    font-size: 12px;
+    margin-top: -1px;
+}
+
+
+/* sc-store 영역 */
+.sc-store .store-list {
+    margin-top: 105px;
+    display: flex;
+    gap: 20px;
+}
+
+.sc-store .store-item .text-box p {
+    margin-top: 16px;
+    font-size: 20px;
+ }
+
+ .sc-store .text-box .btn-more {
+    margin: 10px auto;
+    padding: 6px 21px;
+    font-size: 10px;
+}
+
+/* sc-with 영역 */
+.sc-with .headline{
+    margin-top: 95px;
+}
+
+.sc-with .btn.next{
+    margin-left: 42px;
+}
+}
+
+
+
+/* 721~766 (767에서 바뀜)*/ 
+@media (max-width:767px){
+
+/* sc-season 영역 */
+.sc-season .season-list{
+    display: flex;
+    gap: 20px;
+}
+
+.sc-season .season-item a{}
+
+.sc-season .season-item{
+    position: relative;
+    background: #ededed;
+    flex: 2.5;
+}
+
+.sc-season .text-box{
+    text-align: center;
+    line-height: 1.8;
+    padding-left: 5.6497175141%;
+    padding-bottom: 5.9574468085%;
+}
+
+.sc-season .season-item-big{
+    position: relative;
+}
+
+
+.sc-season .season-item-big .text-box{
+    position: absolute;
+    bottom: 0;left: 0px;
+}
+
+.sc-season .season-item-big .img-box{
+    height: 302px;
+}
+
+.sc-season .season-item-big{}
+
+.sc-season .season-item-big .text-box .title{
+    font-size: 18px;
+}
+.sc-season .season-item-big .text-box .desc{
+    font-size: 12px;
+    margin-top: -1px;
+}
+
+}
+
+
+/* 0~720 (721에서 바뀜)*/ 
+@media (max-width:721px){
+    
+    /* 메인 비주얼 (모바일) 영역 */
+    .sc-visual{display: none;}
+    .sc-visual_m{
+        position: relative;
+        display: block;
+    }
+    .sc-visual_m .img-box{
+        padding-bottom: calc((1100/720)*100%)
+
+    }
+    .sc-visual_m img{
+        position: absolute;
+        top: 0;left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .sc-visual_m .text-box{
+        position: absolute;
+        left: 50%;
+        bottom: 768px;
+        transform: translateX(-50%);
+        text-align: center;
+        color: #fff;
+    }
+    .sc-visual_m .text-box strong{
+        display: block;
+        font-size: 24px;
+        line-height: 44px;
+        opacity: 0;
+        transform: translateY(50px);
+    }   
+    .sc-visual_m .text-box p{
+        font-size: 14px;
+        line-height: 18px;
+        opacity: 0;
+        transform: translateY(50px);
+    }  
+    .sc-visual_m .swiper-slide-active p{
+        opacity: 1;
+        transform: translateY(0px);
+        transition: transform 1s .3s, opacity 1s .3s;
+    }
+    .sc-visual_m .swiper-slide-active strong{
+        display: block;
+        opacity: 1;
+        transform: translateY(0px);
+        transition: transform 1s .4s, opacity 1s .4s;
+    }
+    
+    .sc-visual_m .control-box{
+        display: flex;
+        justify-content: center;
+
+        position: absolute;
+        bottom: 45px;left: 0;
+        width: 100%;
+        z-index: 2;
+        margin-bottom: 4.6875%;
+    }
+    .sc-visual_m .control-box .inner{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 83.3333333333%
+    }
+    .sc-visual_m .control-box .swiper-pagination{
+        position: relative;
+    }
+
+    .sc-visual_m .btn-autoplay{
+        margin-right: 12px;
+        width: 9px;
+        height: 11px;
+        background: url(../img/btn-stop.png) no-repeat center center/cover;
+    }
+    .sc-visual_m .btn-autoplay.on{
+        background: url(../img/btn-play.png) no-repeat center center/cover;
+    }
+    
+    .sc-visual_m .swiper-pagination-progressbar{
+        background-color: rgba(255,255,255,0);
+        border: 1px solid rgba(255,255,255,0.5);
+    }
+    .sc-visual_m .swiper-pagination-progressbar-fill{
+        background-color: #fff;
+    }
+
+
+    /* sc-recommend 영역 */
+    .sc-recommend {
+        top: -25px;
+        margin-top: 24px;
+    }
+    .recommend-slide{display: none;}
+    .recommend-slide_m{display: block;}
+
+    .sc-recommend .img-box{
+        max-width: 680px;
+        height: auto;
+    }
+
+    .sc-recommend .img-box img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .sc-recommend .btn{
+        width: 35px;
+        height: 35px;
+        top: 40%;
+    }
+    .sc-recommend .btn.prev{
+        left: 0;
+        right: auto;
+    }
+    
+    .sc-recommend .btn.next{
+        right: 0;
+        left: auto;
+    }
+
+    .sc-recommend .text-box .kor{
+        font-size: 16px;
+    }
+    .sc-recommend .text-box .eng{
+        font-size: 13px;
+        padding: 2px 0 10px;
+    }
+    .sc-recommend .text-box .price{
+        font-size: 13px;
+    }
+
+    .sc-recommend .control-box .swiper-pagination{
+        position: relative;
+        width: 98%;
+    }
+
+    .sc-recommend .btn-autoplay{
+        width: 8px;
+        height: 10px;
+    }
+
+    /* sc-best 영역 */
+    .sc-best{ margin-top: 95px; }
+
+    .sc-best .img-box{display: none;}
+
+    .sc-best .img-box_m{display: block; height: 892px;}
+
+    .sc-best .img-box_m img{
+        width: 100%;
+        height: 100%;
+        top: 0;left: 0;
+        object-fit: cover;
+    }
+
+    .sc-best .text-box{   padding-bottom: 5.9574468085%;}
+    .sc-best .text-box .title{
+        font-size: 24px;
+    }
+    .sc-best .text-box .desc{
+        font-size: 14px;
+        margin-top: 4px;
+    }
+    
+    .sc-best .btn{
+        margin-top: 20px;
+        width: 95px;
+        height: 35px;
+        padding: 12px 23px 6px;
+    
+    }
+    .sc-best .btn-more{
+        font-size: 10px;
+        letter-spacing: -.07em;
+        word-spacing: 0.05em;
+    }
+
+
+    /* sc-season 영역 (모바일) */
+    .sc-season .season-list{display: none;}
+    .sc-season .season-list_m{
+        display: block;
+    }
+
+    .season-list_m .season-item-big{
+        position: relative;
+        width: 100%;
+    }
+    .season-list_m .season-item-big .img-box{ 
+        background: #ededed;
+        width: 100%;
+        padding-bottom:73.4375%;
+        position: relative;
+    }
+    .season-list_m .season-item-big .img-box img{
+        height: 100%; 
+        width: 100%;
+        position: absolute;
+        top: 0;left: 0;
+        object-fit: cover;
+    }
+
+    .season-list_m .season-item-big .text-box_m{
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: -.025em;
+        color: #666;
+        text-align: center;
+    }
+    .season-list_m .season-item-big .text-box_m .title{
+        font-weight: 500;
+        font-size: 20px;
+        color: #000;
+    }
+    .season-list_m .season-item-big .text-box_m .desc{
+        font-weight: 200;
+        color: #767676;
+        line-height: 30px;
+        margin-top: 4px;
+        font-size: 13px;
+    } 
+
+    .season-list_m .flex-area{
+        margin-top: 20px;
+        display: flex; 
+        gap: 10px;
+    }
+
+    .season-list_m .season-item{
+        position: relative;
+        flex: 1;
+    }
+    
+    .season-list_m .season-item .img-box{ 
+        background: #ededed;
+        height: auto;
+    }
+    .season-list_m .season-item .img-box img{
+        height: 100%; 
+        top: 0;left: 0;
+        object-fit: cover;
+    }
+    
+    /* sc-store 영역 */
+    .sc-store .store-list{display: none;}
+    .sc-store .store-list_m{
+        display: block;
+        margin-top: 95px;
+    }
+    .sc-store .store-list_m .store-item:nth-child(2){
+        margin-top: 30px;
+    }
+    .sc-store .store-item .img-box{
+        background: #f00f;
+        max-width: 680px;
+    }
+    .sc-store .store-item .text-box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .sc-store .store-item .text-box p {
+        margin-top: 22px;
+        font-size: 22px;
+    }
+
+}
+
+
